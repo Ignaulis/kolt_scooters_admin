@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mainColor: rgb(227, 241, 248);
+  --mainFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --boxShadow: 0 2px 8px -3px black;
+}
+
+.wrapper {
+  width: 100%;
+  background-image: url('./assets/images/hero.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.button {
+  width: max-content;
+  height: max-content;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 24px;
+  transition: all .2s;
+  border-radius: 12px;
+}
+
+.red {
+  background-color: #F75D59;
+}
+
+.blue {
+  background-color: rgb(156, 198, 249);
+}
+
+.close {
+  background-color: #F75D59;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.orange {
+  background-color: rgb(248, 168, 107);
+}
+
+.button:hover {
+  opacity: .7;
+}

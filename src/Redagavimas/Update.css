@@ -1,0 +1,96 @@
+.update-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: -2000px;
+    left: 0;
+    right: 0;
+    transition: top .5s ease;
+}
+.update-container.visible {
+    top: 80px;
+}
+.update-wrapper {
+    z-index: 12;
+    width: 440px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(255, 255, 255, 0.9);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: var(--boxShadow);
+}
+
+.update-head {
+    width: 100%;
+    height: 10%;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: var(--mainFont);
+    letter-spacing: 3px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.update-mid {
+    width: 100%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 80px;
+}
+.update-input-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: var(--mainFont);
+    font-size: 23px;
+}
+
+.update-input-box input {
+    outline: none;
+    padding: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.update-buttons {
+    width: 100%;
+    height: 12%;
+    background-color: var(--mainColor);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box-busy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-busy input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.box-reado input {
+    background-color: rgb(225, 225, 225);
+    border: 1px solid black;
+    cursor: default;
+}

@@ -1,0 +1,26 @@
+.msg-wrapper {
+    width: max-content;
+    height: max-content;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--boxShadow);
+    margin: 10px;
+    position: fixed;
+    right: -500px;
+    transition: right 1s ease;
+}
+.msg-wrapper.visible {
+    right: 0;
+}
+
+.msg {
+    font-family: var(--mainFont);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .msg{
+        font-size: 15px;
+    }
+}
